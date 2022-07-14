@@ -1,0 +1,15 @@
+
+    <%# const nama = "Andika"; %> 
+    <h1>Welcome <%= nama %> </h1>
+    <h2>Contact List</h2>
+    <!-- menampilkan data dari app -->
+    <% if (cont.length > 1) { %>
+        <% cont.forEach(cont => { %>
+            <ul>
+                <li>nama: <%= cont.name %> </li>
+                <li>email: <%= cont.email %> </li>
+            </ul>
+        <% }) %>
+    <% } else { %>
+        <p>data tidak ditemukan</p>
+    <% } %> 
